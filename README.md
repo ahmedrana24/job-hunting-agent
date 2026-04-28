@@ -29,12 +29,3 @@ This project follows the **GAME Framework** for AI Agents:
 * **Name:** Rana Muhammad Ahmed
 * **University:** FAST NUCES , CFD
 * **Focus:** AI/ML Engineer
-
----
-
-## 🌟 Step 9: The "Unique Feature" (Extra 10 Marks)
-
-To make sure you get those 10 marks for "Uniqueness and Creativity," let's add a **LinkedIn Outreach Generator**. This function will create a professional message you can send to recruiters.
----
-
-ready for submission. Do you need help with anything else?**
