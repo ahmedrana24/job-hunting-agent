@@ -132,38 +132,84 @@ def generate_reminders():
                 reminders += f"- {row['application_id']}: Interview at {row['company']} on {row['interview_date']}.\n"
     return reminders
 
-# --- 6. MAIN EXECUTION --- [cite: 242-279]
+ # --- UNIQUE FEATURE: LinkedIn Outreach Generator --- [cite: 308, 338]
+def generate_linkedin_message(company, role):
+    message = "LinkedIn Outreach Message\n=========================\n\n"
+    message += f"Hi [Recruiter Name],\n\n"
+    message += f"I recently applied for the {role} position at {company} and am very excited about the opportunity. "
+    message += f"With my background in AI/ML engineering and MLOps, I am confident I can contribute effectively to your team.\n\n"
+    message += "I've attached my tailored resume for your review. Looking forward to hearing from you!\n\n"
+    message += "Best regards,\nRana Muhammad Ahmed"
+    return message
+
+# --- 6. MAIN EXECUTION (The Brain of the Agent) ---
 def run_agent():
+    # A. Ensure all folders exist [cite: 243]
     ensure_folders()
+    
+    # B. Read inputs from folders [cite: 244-246]
     job_text, job_count = read_text_files(JOB_DIR)
     resume_text, resume_count = read_text_files(RESUME_DIR)
     kb_text, kb_count = read_text_files(KB_DIR)
-
+    
+    # C. Safety Check: If folders are empty, stop and warn the user [cite: 247-248]
     if job_count == 0 or resume_count == 0 or kb_count == 0:
-        print("\n[!] ERROR: Ensure .txt files are in input_jobs, input_resumes, and input_kb.")
+        print("\n[!] ERROR: Please add .txt files in input_jobs, input_resumes, and input_kb folders.")
         return
 
+    # D. Process data using keyword extraction [cite: 249-252]
     job_skills = extract_keywords(job_text)
     resume_skills = extract_keywords(resume_text)
     matched, missing, score = compare_skills(job_skills, resume_skills)
-
-    # Prepare Reports [cite: 253-266]
-    job_rep = generate_job_analysis(job_text, job_skills)
-    gap_rep = generate_skill_gap_report(job_skills, resume_skills, matched, missing, score)
-    res_sug = generate_resume_suggestions(job_skills, missing)
-    int_que = generate_interview_questions(job_skills, kb_text)
+    
+    # E. Generate individual reports [cite: 253-256]
+    job_report = generate_job_analysis(job_text, job_skills)
+    gap_report = generate_skill_gap_report(job_skills, resume_skills, matched, missing, score)
+    resume_suggestions = generate_resume_suggestions(job_skills, missing)
+    interview_questions = generate_interview_questions(job_skills, kb_text)
+    
+    # F. UNIQUE FEATURE: LinkedIn Outreach Generator [cite: 299, 308]
+    # We use 'Tech-Vision Corp' as a placeholder; in a real app, this would be dynamic
+    outreach_msg = generate_linkedin_message("Tech-Vision Corp", "Junior AI Engineer")
+    
+    # G. Update the tracker and reminders [cite: 257-258]
     create_or_update_tracker()
     reminders = generate_reminders()
-
-    # Final Master Report [cite: 259]
-    final = f"CareerPrep Report - {datetime.now().strftime('%Y-%m-%d %H:%M')}\n{'='*40}\n\n"
-    final += job_rep + "\n" + gap_rep + "\n" + res_sug + "\n" + int_que + "\n" + reminders
-
-    # Save outputs [cite: 267-271]
-    save_text(os.path.join(OUTPUT_DIR, "final_agent_report.txt"), final)
+    
+    # H. Create the Final Master Report [cite: 259-266]
+    final_report = "CareerPrep Job-Hunting Agent Report\n"
+    final_report += f"Generated on: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
+    final_report += "====================================\n\n"
+    final_report += job_report + "\n"
+    final_report += gap_report + "\n"
+    final_report += resume_suggestions + "\n"
+    final_report += interview_questions + "\n"
+    final_report += outreach_msg + "\n" # Adding the LinkedIn message to final report
+    final_report += reminders + "\n"
+    
+    # I. Save all outputs to their respective folders [cite: 267-271]
+    save_text(os.path.join(OUTPUT_DIR, "job_analysis_report.txt"), job_report)
+    save_text(os.path.join(OUTPUT_DIR, "skill_gap_report.txt"), gap_report)
+    save_text(os.path.join(OUTPUT_DIR, "tailored_resume_suggestions.txt"), resume_suggestions)
+    save_text(os.path.join(OUTPUT_DIR, "interview_questions.txt"), interview_questions)
+    save_text(os.path.join(OUTPUT_DIR, "linkedin_outreach.txt"), outreach_msg)
+    save_text(os.path.join(OUTPUT_DIR, "final_agent_report.txt"), final_report)
     save_text(os.path.join(TRACKER_DIR, "reminders.txt"), reminders)
-
-    print(f"\nSUCCESS: Reports generated in 'outputs/'. Match Score: {score}%")
+    
+    # J. Console Success Message with Visual Score Gauge (Unique Idea) [cite: 272-277, 299]
+    print("\n" + "="*40)
+    print("      AGENT COMPLETED SUCCESSFULLY")
+    print("="*40)
+    
+    # Create a visual text-based progress bar for the Match Score
+    bar_length = 20
+    filled_length = int(bar_length * score // 100)
+    gauge = '█' * filled_length + '-' * (bar_length - filled_length)
+    
+    print(f"Match Score: |{gauge}| {score}%")
+    print(f"Files Processed: Jobs({job_count}), Resumes({resume_count}), KB({kb_count})")
+    print("Check the 'outputs/' and 'tracker/' folders for your reports!")
+    print("="*40)
 
 if __name__ == "__main__":
     run_agent()

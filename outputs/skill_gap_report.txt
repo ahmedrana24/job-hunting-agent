@@ -1,0 +1,20 @@
+Skill Gap Report
+================
+
+Match Score: 66.67%
+
+Matched Skills:
+- machine learning
+- sql
+- git
+- pandas
+- numpy
+- docker
+- aws
+- ci/cd
+
+Missing Skills:
+- python
+- github
+- communication
+- problem solving

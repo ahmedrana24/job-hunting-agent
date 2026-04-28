@@ -1,0 +1,16 @@
+Job Analysis Report
+===================
+
+Skills/keywords found in job posters:
+- python
+- machine learning
+- sql
+- git
+- github
+- communication
+- problem solving
+- pandas
+- numpy
+- docker
+- aws
+- ci/cd

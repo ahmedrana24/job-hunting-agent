@@ -1,0 +1,26 @@
+Tailored Resume Suggestions
+===========================
+
+Suggested improvements according to job posters:
+- Add or improve resume evidence related to python.
+- Add or improve resume evidence related to machine learning.
+- Add or improve resume evidence related to sql.
+- Add or improve resume evidence related to git.
+- Add or improve resume evidence related to github.
+- Add or improve resume evidence related to communication.
+- Add or improve resume evidence related to problem solving.
+- Add or improve resume evidence related to pandas.
+- Add or improve resume evidence related to numpy.
+- Add or improve resume evidence related to docker.
+- Add or improve resume evidence related to aws.
+- Add or improve resume evidence related to ci/cd.
+
+Suggested resume bullets:
+- Developed Python-based academic projects with clear documentation.
+- Used GitHub for project version control and README-based documentation.
+
+Skills to improve before applying/interview:
+- python
+- github
+- communication
+- problem solving

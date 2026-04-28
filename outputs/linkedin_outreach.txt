@@ -1,0 +1,11 @@
+LinkedIn Outreach Message
+=========================
+
+Hi [Recruiter Name],
+
+I recently applied for the Junior AI Engineer position at Tech-Vision Corp and am very excited about the opportunity. With my background in AI/ML engineering and MLOps, I am confident I can contribute effectively to your team.
+
+I've attached my tailored resume for your review. Looking forward to hearing from you!
+
+Best regards,
+Rana Muhammad Ahmed
