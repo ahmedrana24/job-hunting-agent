@@ -1,0 +1,15 @@
+Job Title: Junior AI/ML Engineer
+Company: Tech-Vision Corp
+Location: Remote
+
+Responsibilities:
+- Build and deploy machine learning models using Python.
+- Manage data pipelines and perform data preprocessing.
+- Use Docker and AWS for scalable infrastructure.
+- Implement CI/CD and version control using Git and GitHub.
+- Collaborate with the team using clear communication and problem solving.
+
+Requirements:
+- Strong skills in Python and SQL.
+- Experience with Pandas and NumPy.
+- Knowledge of MLOps tools like MLflow or Docker.

@@ -1,0 +1,20 @@
+RANA MUHAMMAD AHMED
+AI/ML Engineer
+
+SUMMARY:
+Dedicated AI problem solver focused on scaling technical divisions and delivering production-ready AI-powered interfaces. Experienced in YOLOv8, Llama, and MLOps.
+
+TECHNICAL SKILLS:
+- Machine Learning & Data Science: FastAPI, Pandas, NumPy, Matplotlib, Scikit-learn, TensorFlow
+- Data Engineering: SQL, Docker, Linux, Git, S3 Buckets
+- MLOps & Cloud: AWS, MLflow, CI/CD, ETL Pipelines, RunPod
+- Agentic AI: GAIL, GAME Frameworks, LLM Optimization
+
+EXPERIENCE:
+- Project Lead & AI Developer at Moonbridge Systems: Led AI/DS operations and global business development.
+- Junior AI Intern at TechNDev: Optimized and deployed YOLOv8 pipelines on RunPod.
+
+PROJECTS:
+- DRAPER: AI Wardrobe Stylist using a Llama-based recommendation engine.
+- Automated MLOps Pipeline: Optimized FastAPI backends and ensured data lineage.
+- Multimodal AI: Esophageal Cancer Detection using cross-modal data fusion.

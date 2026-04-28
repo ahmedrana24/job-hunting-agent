@@ -1,0 +1,7 @@
+INTERVIEW PREPARATION NOTES:
+- Explain the GAME framework: Goal, Actions, Memory, and Environment.
+- Discuss MLOps: The intersection of ML, DevOps, and Data Engineering.
+- Describe CI/CD: Continuous Integration and Continuous Deployment for AI.
+- Explain Docker: How containers help in making AI models portable.
+- Behavioral Tip: Always use the STAR method (Situation, Task, Action, Result).
+- Technical Tip: Be ready to explain your project architecture clearly.

@@ -1,0 +1,111 @@
+CareerPrep Report - 2026-04-28 15:12
+========================================
+
+Job Analysis Report
+===================
+
+Skills/keywords found in job posters:
+- python
+- machine learning
+- sql
+- git
+- github
+- communication
+- problem solving
+- pandas
+- numpy
+- docker
+- aws
+- ci/cd
+
+Skill Gap Report
+================
+
+Match Score: 66.67%
+
+Matched Skills:
+- machine learning
+- sql
+- git
+- pandas
+- numpy
+- docker
+- aws
+- ci/cd
+
+Missing Skills:
+- python
+- github
+- communication
+- problem solving
+
+Tailored Resume Suggestions
+===========================
+
+Suggested improvements according to job posters:
+- Add or improve resume evidence related to python.
+- Add or improve resume evidence related to machine learning.
+- Add or improve resume evidence related to sql.
+- Add or improve resume evidence related to git.
+- Add or improve resume evidence related to github.
+- Add or improve resume evidence related to communication.
+- Add or improve resume evidence related to problem solving.
+- Add or improve resume evidence related to pandas.
+- Add or improve resume evidence related to numpy.
+- Add or improve resume evidence related to docker.
+- Add or improve resume evidence related to aws.
+- Add or improve resume evidence related to ci/cd.
+
+Suggested resume bullets:
+- Developed Python-based academic projects with clear documentation.
+- Used GitHub for project version control and README-based documentation.
+
+Skills to improve before applying/interview:
+- python
+- github
+- communication
+- problem solving
+
+Interview Questions
+===================
+
+Technical questions based on job posters:
+- Explain your understanding of python.
+- How have you used python in a project or course activity?
+- Explain your understanding of machine learning.
+- How have you used machine learning in a project or course activity?
+- Explain your understanding of sql.
+- How have you used sql in a project or course activity?
+- Explain your understanding of git.
+- How have you used git in a project or course activity?
+- Explain your understanding of github.
+- How have you used github in a project or course activity?
+- Explain your understanding of communication.
+- How have you used communication in a project or course activity?
+- Explain your understanding of problem solving.
+- How have you used problem solving in a project or course activity?
+- Explain your understanding of pandas.
+- How have you used pandas in a project or course activity?
+- Explain your understanding of numpy.
+- How have you used numpy in a project or course activity?
+- Explain your understanding of docker.
+- How have you used docker in a project or course activity?
+- Explain your understanding of aws.
+- How have you used aws in a project or course activity?
+- Explain your understanding of ci/cd.
+- How have you used ci/cd in a project or course activity?
+
+Questions inspired by KB/slides:
+- How would you explain this point in an interview: FILE: notes.txt?
+- How would you explain this point in an interview: INTERVIEW PREPARATION NOTES:?
+- How would you explain this point in an interview: Explain the GAME framework: Goal, Actions, Memory, and Environment.?
+- How would you explain this point in an interview: Discuss MLOps: The intersection of ML, DevOps, and Data Engineering.?
+- How would you explain this point in an interview: Describe CI/CD: Continuous Integration and Continuous Deployment for AI.?
+- How would you explain this point in an interview: Explain Docker: How containers help in making AI models portable.?
+- How would you explain this point in an interview: Behavioral Tip: Always use the STAR method (Situation, Task, Action, Result).?
+- How would you explain this point in an interview: Technical Tip: Be ready to explain your project architecture clearly.?
+
+Application Reminders
+=====================
+
+- APP-001: Tailor resume for Junior AI Engineer at Tech-Vision Corp.
